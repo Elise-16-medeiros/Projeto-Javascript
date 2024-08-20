@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Parada Certa Estacionamento</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/styles.css'>
+    <script src='/javascript/main.js'></script>
+</head>
+<body>
+    
+ <div class="container">
+        <h1>Sistema de Estacionamento</h1>
+        <form id="parking-form">
+            <label for="license-plate">Placa do carro:</label>
+            <input type="text" id="license-plate" required>
+            
+            <label for="hours">Horas estacionadas:</label>
+            <input type="number" id="hours" min="0" required>
+            
+            <label for="minutes">Minutos estacionados:</label>
+            <input type="number" id="minutes" min="0" max="59" required>
+            
+            <button type="button" onclick="addParking()">Adicionar Estacionamento</button>
+        </form>
+        
+        <h2>Carros Estacionados</h2>
+        <ul id="parking-list"></ul>
+        
+        <div id="total-cost"></div>
+    </div>
+
+</body>
+</html>
+
